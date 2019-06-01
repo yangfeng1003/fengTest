@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>tinyheart</title>
+	<style type ="text/css">
+		body{
+			padding-top:10px;
+		}
+		.all_bg{
+			width: 800px;
+			height: 600px;
+			margin: 30px auto;
+		}
+		#allcanvas{
+			position: relative;
+			width: 800px;
+			height: 600px;
+			/*margin: 0 auto;*/
+		}
+		#canvas1{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:1;
+		}
+		#canvas2{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:0;
+		}
+	</style>
+</head>
+<body>
+	<div class="all_bg"> 
+		<div id = "allcanvas">
+			<canvas id = "canvas1" width="800" height="600"></canvas>
+			<!--或设置成<canvas id = "canvas1" width="800px" height="600px"></canvas>
+					但是不能设置成style=width:800px height:600px",使用css样式可能导致画布变形和出现拉伸 -->
+			<canvas id = "canvas2" width="800" height="600"></canvas>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/commonFunctions.js"></script>
+	<script type="text/javascript" src="js/background.js"></script>
+	<script type="text/javascript" src="js/ane.js"></script>
+	<script type="text/javascript" src="js/fruit.js"></script>
+	<script type="text/javascript" src="js/mom.js"></script>
+	<script type="text/javascript" src="js/collision.js"></script>
+	<script type="text/javascript" src="js/baby.js"></script>
+	<script type="text/javascript" src="js/scoreData.js"></script>
+	<script type="text/javascript" src="js/wave.js"></script>
+	<script type="text/javascript" src="js/halo.js"></script>
+	<script type="text/javascript" src="js/dust.js"></script>
+</body>
+	
+</html>
